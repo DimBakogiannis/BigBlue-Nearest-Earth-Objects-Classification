@@ -9,3 +9,7 @@ There is an infinite number of objects in the outer space. Some of them are clos
 #### References:🌎
 - [NASA Open API](https://api.nasa.gov/)
 - [NEO Earth Close Approaches](https://cneos.jpl.nasa.gov/ca/)
+
+### Results📊🕵🏻:
+
+### Conclusion✅🏁:
