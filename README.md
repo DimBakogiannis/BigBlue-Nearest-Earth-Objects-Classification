@@ -12,10 +12,20 @@ There is an infinite number of objects in the outer space. Some of them are clos
 - [NASA Open API](https://api.nasa.gov/)
 - [NEO Earth Close Approaches](https://cneos.jpl.nasa.gov/ca/)
 
-### Results📊🕵🏻:
-
+### Analysis & Results📊🕵🏻:
+- Dataset was imbalanced so different resampling techniques were used
+- The creation of a column named year and extracted by the asteroids' names didn't actually change the model performance
+- Pipeline was deployed to evaluate potential pairs for two datasets ( one with the year column and the original), and each result was saved in a dataframe for comparison
+- Metrics used for evaluation were focused on balanced accuracy, f1-score macro, and execution time
+- The best options were picked and optimized through hyperparameter tuning
+- Final decisions were made based on results and focusing mainly on the target which was to minimize the Type II Error (FN predictions)
+  
 ### Conclusion✅🏁:
-
+- Main Goal of the project was succeeded,as the result of the Logistic Regression Model has less than a 1% probability, which means that there is a really small possibility, a NEO to be predicted as non-hazardous while being hazardous!
+-  Recall Score for class 1(hazardous) indicates that the model correctly identifies the actual instances of a class characterized as hazardous NEOs
+-  In the class of non-hazardous NEOs the model has a great performance for predicting class 0
+-  Very good accuracy and time execution
+-  On the other hand, the model has a high percentage of False Positive predictions, which means that non-hazardous objects are listed as hazardous, which can have a negative impact in terms of money and budgeting, as we have to observe objects when there is no need! The next step would be to try also minimize the FP%
 ### Presentation Snapshots📸:
 I have included below some snapshots from our presentation.
 
